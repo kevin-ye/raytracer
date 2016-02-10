@@ -1,0 +1,103 @@
+Command:
+	time ./A4 Assets/scene-simple.lua
+Result:
+	Calling A4_Render(
+		SceneNode:[name:scene, id:0]
+		Image(width:256, height:256)
+		Antialiasing:  x1
+		eye:  vec3(0.000000, 0.000000, 0.000000)
+		view: vec3(0.000000, 0.000000, -1.000000)
+		up:   vec3(0.000000, 1.000000, 0.000000)
+		fovy: 50
+		ambient: vec3(0.400000, 0.400000, 0.400000)
+		lights{
+			L[vec3(0.800000, 0.800000, 0.800000), vec3(200.000000, 200.000000, 400.000000), 1, 0, 0]
+			L[vec3(0.400000, 0.400000, 0.800000), vec3(0.000000, 5.000000, -20.000000), 1, 0, 0]
+		}
+	)
+	Progress: 0%
+	Progress: 10%
+	Progress: 20%
+	Progress: 30%
+	Progress: 40%
+	Progress: 50%
+	Progress: 60%
+	Progress: 71%
+	Progress: 81%
+	Progress: 91%
+	Progress: 100%
+
+	real	1m53.620s
+	user	1m53.726s
+	sys	0m0.024s
+
+Command: 
+	time ./A4 Assets/scene-4k-AAx1.lua 
+Result:
+	Calling A4_Render(
+		SceneNode:[name:scene, id:0]
+		Image(width:4096, height:2160)
+		Antialiasing:  x1
+		eye:  vec3(0.000000, 0.000000, 0.000000)
+		view: vec3(0.000000, 0.000000, -1.000000)
+		up:   vec3(0.000000, 1.000000, 0.000000)
+		fovy: 50
+		ambient: vec3(0.400000, 0.400000, 0.400000)
+		lights{
+			L[vec3(0.800000, 0.800000, 0.800000), vec3(200.000000, 200.000000, 400.000000), 1, 0, 0]
+			L[vec3(0.400000, 0.400000, 0.800000), vec3(0.000000, 5.000000, -20.000000), 1, 0, 0]
+		}
+	)
+	Progress: 0%
+	Progress: 10%
+	Progress: 20%
+	Progress: 30%
+	Progress: 40%
+	Progress: 50%
+	Progress: 60%
+	Progress: 70%
+	Progress: 80%
+	Progress: 90%
+	Progress: 100%
+
+	real	214m27.894s
+	user	214m43.085s
+	sys	0m1.210s
+
+Command:
+	./A4 Assets/scene-4k-AAx1-bounding.lua 
+Result:
+	Calling A4_Render(
+		SceneNode:[name:scene, id:0]
+		Image(width:4096, height:2160)
+		Antialiasing:  x1
+		eye:  vec3(0.000000, 0.000000, 0.000000)
+		view: vec3(0.000000, 0.000000, -1.000000)
+		up:   vec3(0.000000, 1.000000, 0.000000)
+		fovy: 50
+		ambient: vec3(0.400000, 0.400000, 0.400000)
+		lights{
+			L[vec3(0.800000, 0.800000, 0.800000), vec3(200.000000, 200.000000, 400.000000), 1, 0, 0]
+			L[vec3(0.400000, 0.400000, 0.800000), vec3(0.000000, 5.000000, -20.000000), 1, 0, 0]
+		}
+	)
+	Progress: 0%
+	Progress: 10%
+	Progress: 20%
+	Progress: 30%
+	Progress: 40%
+	Progress: 50%
+	Progress: 60%
+	Progress: 70%
+	Progress: 80%
+	Progress: 90%
+	Progress: 100%
+
+	real	7m50.174s
+	user	7m50.506s
+	sys	0m0.205s
+
+Command:
+	time ./A4 Assets/scene-720p-AAx4.lua
+Result:
+	
