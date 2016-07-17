@@ -46,7 +46,7 @@ if os.get() == "macosx" then
     linkOptionList = { "-framework IOKit", "-framework Cocoa", "-framework CoreVideo", "-framework OpenGL" }
 end
 
-buildOptions = {""}
+buildOptions = {"-std=c++0x"}
 
 
 -- Build glfw3 static library and copy it into <cs488_root>/lib if it is not
